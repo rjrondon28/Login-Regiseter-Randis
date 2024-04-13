@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: roto;
+	src: url();
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(https://storage.googleapis.com/pod_public/1300/167870.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+nav{
+	position: absolute;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	top: 0;
+	width: 98%;
+	height: 3.5em;
+	border-bottom: 1px solid #000;
+	background: url(https://png.pngtree.com/background/20230520/original/pngtree-black-and-gold-swirl-marble-painting-picture-image_2675368.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px;
+	backdrop-filter: blur(100px) ;
+	z-index: 0;
+}
+nav button{
+	margin-right: 5%;
+	padding: 5px 15px 5px 15px;
+	outline: none;
+	background: rgba(255, 255, 255, 1);
+	border: 1px solid goldenrod;
+	transition: .3s;
+	font-weight: 700;
+}
+nav button:hover{
+	box-shadow: 5px 5px 3px goldenrod;
+	letter-spacing: .1em;
+	border-radius: 3px;
+	cursor: pointer;
+}

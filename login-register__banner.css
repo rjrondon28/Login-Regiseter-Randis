@@ -1,0 +1,80 @@
+.banner{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid white;
+	width: 340px;
+	box-shadow: 3px 3px 10px black;
+	backdrop-filter:blur(5px);
+	border-radius: 7px 0 7px 7px;
+	background: url(https://png.pngtree.com/background/20210715/original/pngtree-original-hand-painted-black-gold-marble-black-and-white-layered-background-picture-image_1301335.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	transform: scaleX(0);
+	transition: .3s;
+	z-index: 2;
+}
+.banner.active{
+	transform: scaleX(1);
+}
+body::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .4);
+	backdrop-filter: blur(1px);
+	transform: scaleY(0);
+	transition: .3s;
+	z-index: 1;
+}
+body.active::before{
+	transform: scaleY(1);
+}
+.banner .closet{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-radius:0 0 0 5px;
+	background: #eead11;
+	color: white;
+	z-index: 2;
+	transition: .3s;
+}
+.banner .closet:hover{
+	box-shadow: -2px 2px 0px black;
+	cursor: pointer;
+}
+.form-box .login-register{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.form-box .login-register p{
+	font-family: sans-serif;
+	font-weight: 500;
+	color: rgb(0, 0, 0, .8);
+}
+.form-box .login-register a{
+	text-decoration: none;
+	color: #eead11;
+	text-shadow: 2px 2px 5px white;
+	font-family: arial;
+	font-weight: 700;
+	transition: .3s;
+}
+.form-box .login-register a:hover{
+	color: black;
+	text-shadow: #eead11;
+	border-bottom: 1px solid black;
+}

@@ -1,0 +1,12 @@
+.banner .form-box.register{
+	position: absolute;
+	transform:translateX(100%);
+}
+.banner.Register .form-box.login{
+	position: absolute;
+	transform: translateX(-100%);
+}
+.banner.Register .form-box.register{
+	position: relative;
+	transform: translateX(0);
+}

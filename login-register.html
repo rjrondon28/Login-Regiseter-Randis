@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Logi-Register</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="login-register__nav.css">
+	<link rel="stylesheet" type="text/css" href="login-register__banner.css">
+	<link rel="stylesheet" type="text/css" href="ligin-register__banner-register.css">
+	<link rel="stylesheet" type="text/css" href="ligin-register__banner-login.css">
+</head>
+<body>
+
+	<nav class="nav">
+		<button id="btn">Login</button>
+	</nav>
+
+	<div class="banner">
+
+		<div class="closet">
+			<i class="fa-solid fa-xmark"></i>
+		</div>
+
+		<div class="form-box login">
+			<h1>Login</h1>
+			<form action="#">
+				<div class="imput--box">
+					<input id="user-l" type="text" text="" required="required">
+					<label for="user-l">Users</label>
+				</div>
+				<div class="imput--box">
+					<input id="password" type="password" text="" required="required">
+					<label for="password">Password</label>
+				</div>
+				<div class="imput--box ver-pass">
+					<input id="ver-pass" type="checkbox" onclick="verPass()">
+					<label for="ver-pass">Mostar Password</label>
+				</div>
+				<div class="imput--box submit">
+					<button id="submit-l" type="submit">Enviar</button>
+				</div>
+			</form>
+			<div class="login-register">
+                <p>Aun no tienes cuenta?</p> <a href="#" class="register-link">Registrate</a>
+            </div>
+		</div>
+		<div class="form-box register">
+			<h1>Register</h1>
+			<form action="#">
+				<div class="imput--box">
+					<input id="user-r" type="text" text="" required="required">
+					<label for="user-r">Users</label>
+				</div>
+				<div class="imput--box">
+					<input id="email" type="email" text="" required="required">
+					<label for="email">Email</label>
+				</div>
+				<div class="imput--box">
+					<input id="password-r" type="password" text="" required="required">
+					<label for="password-r">Password</label>
+				</div>
+				<div class="imput--box">
+					<input id="password-cr" type="password" text="" required="required">
+					<label for="password-cr">Confirmar Password</label>
+				</div>
+				<div class="imput--box ver-pass">
+					<input id="ver-pass-r" type="checkbox" onclick="verPassR()">
+					<label for="ver-pass-r">Mostar Password</label>
+				</div>
+				<div class="imput--box submit">
+					<button id="submit-l" type="submit">Enviar</button>
+				</div>
+			</form>
+			<div class="login-register">
+                <p>Ya tienes cuenta?</p> <a href="#" class="register-link-r">Inicia Sescion</a>
+            </div>
+		</div>
+	</div>
+	
+<script type="text/javascript" src="login-register.js"></script>
+</body>
+</html>
